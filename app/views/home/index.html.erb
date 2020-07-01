@@ -1,0 +1,47 @@
+<div class="form mb-20">
+  <h3>Create API Key</h3>
+  <div class="form-inputs">
+    <label for="key_name">API Key Name</label>
+    <input type="text" name="key_name" value="">
+  </div>
+  <div class="form-inputs">
+    <label for="kid">Select mKID</label>
+    <select class="" name="kid">
+      <option selected value="c8282c7a-84c7-421b-9682-130fa9efe933">c8282c7a-84c7-421b-9682-130fa9efe933</option>
+      <option value="3c581f16-cfe4-4a89-b515-ab23d9741590">3c581f16-cfe4-4a89-b515-ab23d9741590</option>
+    </select>
+  </div>
+  <div class="form-inputs">
+    <input type="submit" name="" value="Submit">
+  </div>
+</div>
+<div class="mb-10">
+  <b>P20-93 (pAPI) &nbsp;&nbsp;&nbsp;&nbsp&nbsp:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><span id="uuid" ></span>
+</div>
+<div class="mb-10">
+  <b>P20-48 (sAPI) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><span id="sAPI" ></span>
+</div>
+<div class="mb-10">
+  <b>P20-82 (sRSA) &nbsp;&nbsp;&nbsp;&nbsp&nbsp:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><span id="sRSA" ></span>
+</div>
+<div class="form-inputs">
+  <label for="kid">Select No of Bits</label>
+  <select class="" name="no_of_bits" id="no_of_bits">
+    <option selected value="1024">1024 bits</option>
+    <option value="2048">2048 bits</option>
+    <option value="4096">4096 bits</option>
+  </select>
+</div>
+<div class="form-inputs">
+  <button type="button" name="button" id="generate-csr" >Generate CSR</button>
+</div>
+<div class="main-box">
+  <div class="main-box-1">
+    <h4>CSR</h4>
+    <div id="csr" ></div>
+  </div>
+  <div class="main-box-2">
+    <h4>Encrypted Private RSA Key</h4>
+    <div id="private-key" ></div>
+  </div>
+</div>

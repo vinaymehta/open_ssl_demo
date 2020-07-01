@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OpenSslDemo</title>
+    <title>UuidDemo</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.9.1/forge.all.min.js"></script>
+
   </head>
 
   <body>
+    <div class="full-page-loader hidden">
+      <%= image_tag "loading.gif" %>
+    </div>
     <%= yield %>
   </body>
 </html>
